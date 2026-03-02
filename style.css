@@ -36,7 +36,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* LEFT */
+/* PROFILE */
 .profile {
     display: flex;
     align-items: center;
@@ -60,7 +60,66 @@ body {
     background: #e4e6eb;
 }
 
-/* FEED */
+/* STORIES */
+.stories-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.stories-container::-webkit-scrollbar {
+    display: none;
+}
+
+.story-card {
+    min-width: 110px;
+    height: 180px;
+    background: #ffffff;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+.story-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-card span {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+/* ADD STORY */
+.add-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1877f2;
+    font-weight: 600;
+}
+
+.add-story span {
+    position: static;
+    font-size: 28px;
+}
+
+.add-story p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* POSTS */
 .post-card {
     border-radius: 10px;
     padding: 15px;
@@ -110,7 +169,7 @@ body {
     margin-top: 10px;
 }
 
-/* ACTIONS */
+/* POST ACTIONS */
 .post-actions {
     display: flex;
     justify-content: space-around;
@@ -121,7 +180,7 @@ body {
     color: #65676b;
 }
 
-/* RIGHT */
+/* CONTACTS */
 .contact {
     display: flex;
     align-items: center;
@@ -138,67 +197,4 @@ body {
 
 .contact:hover {
     background: #e4e6eb;
-}
-/* STORIES */
-.stories-container {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 20px;
-    overflow-x: auto;
-    padding-bottom: 5px;
-}
-
-.stories-container::-webkit-scrollbar {
-    display: none;
-}
-
-.story-card {
-    min-width: 110px;
-    height: 180px;
-    background: #ffffff;
-    border-radius: 12px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
-    cursor: pointer;
-}
-
-.story-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Story name */
-.story-card span {
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 500;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
-}
-
-/* Add Story */
-.add-story {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #ffffff;
-    color: #1877f2;
-    font-weight: 600;
-}
-
-.add-story span {
-    position: static;
-    font-size: 28px;
-    margin-bottom: 5px;
-    color: #1877f2;
-}
-
-.add-story p {
-    margin: 0;
-    font-size: 14px;
 }
