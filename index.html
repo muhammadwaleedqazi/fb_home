@@ -7,28 +7,27 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font -->
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar fb-navbar fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
         <span class="fb-logo">facebook</span>
         <img src="https://randomuser.me/api/portraits/women/44.jpg" class="nav-profile">
     </div>
 </nav>
 
-<!-- MAIN -->
+<!-- MAIN CONTENT -->
 <div class="container main-content">
-
     <div class="row">
 
-        <!-- LEFT -->
+        <!-- LEFT SIDEBAR -->
         <aside class="col-lg-3 d-none d-lg-block">
             <div class="side-card">
                 <div class="profile">
@@ -39,38 +38,40 @@
                 <div class="side-item">Friends</div>
                 <div class="side-item">Memories</div>
                 <div class="side-item">Saved</div>
+                <div class="side-item">Groups</div>
             </div>
         </aside>
 
         <!-- FEED -->
         <main class="col-lg-6">
+
             <!-- STORIES -->
-<div class="stories-container">
-    <div class="story-card add-story">
-        <span>+</span>
-        <p>Create Story</p>
-    </div>
+            <div class="stories-container">
+                <div class="story-card add-story">
+                    <span>+</span>
+                    <p>Create Story</p>
+                </div>
 
-    <div class="story-card">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
-        <span>Betty</span>
-    </div>
+                <div class="story-card">
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+                    <span>Betty</span>
+                </div>
 
-    <div class="story-card">
-        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d">
-        <span>Dennis</span>
-    </div>
+                <div class="story-card">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d">
+                    <span>Dennis</span>
+                </div>
 
-    <div class="story-card">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2">
-        <span>Cynthia</span>
-    </div>
+                <div class="story-card">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2">
+                    <span>Cynthia</span>
+                </div>
 
-    <div class="story-card">
-        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e">
-        <span>Tom</span>
-    </div>
-</div>
+                <div class="story-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e">
+                    <span>Tom</span>
+                </div>
+            </div>
 
             <!-- CREATE POST -->
             <div class="card post-card">
@@ -106,7 +107,7 @@
 
         </main>
 
-        <!-- RIGHT -->
+        <!-- RIGHT SIDEBAR -->
         <aside class="col-lg-3 d-none d-lg-block">
             <div class="side-card">
                 <h6>Contacts</h6>
@@ -124,7 +125,6 @@
         </aside>
 
     </div>
-
 </div>
 
 </body>
