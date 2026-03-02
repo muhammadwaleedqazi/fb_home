@@ -17,65 +17,58 @@ body {
     font-weight: 700;
 }
 
-.fb-search {
-    background: #f0f2f5;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 20px;
-    width: 240px;
-}
-
 .nav-profile {
     width: 36px;
     height: 36px;
     border-radius: 50%;
 }
 
-/* LAYOUT */
+/* MAIN */
 .main-content {
     margin-top: 20px;
 }
 
-/* SIDEBARS */
-.sidebar {
-    padding: 20px;
+/* SIDE CARDS */
+.side-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
-.profile-row {
+/* LEFT */
+.profile {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.profile-row img {
-    width: 36px;
+.profile img {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
-.sidebar-item {
-    padding: 10px;
-    border-radius: 8px;
+.side-item {
+    padding: 8px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
-.sidebar-item:hover {
+.side-item:hover {
     background: #e4e6eb;
 }
 
 /* FEED */
-.feed {
-    padding: 0 12px;
-}
-
-/* POSTS */
 .post-card {
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 15px;
     margin-bottom: 15px;
     border: none;
 }
 
+/* CREATE POST */
 .create-post {
     display: flex;
     gap: 10px;
@@ -95,7 +88,7 @@ body {
     border-radius: 20px;
 }
 
-/* POST HEADER */
+/* POST */
 .post-header {
     display: flex;
     gap: 10px;
@@ -113,29 +106,28 @@ body {
 
 .post-image {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-top: 10px;
 }
 
-/* POST FOOTER */
-.post-footer {
+/* ACTIONS */
+.post-actions {
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
+    border-top: 1px solid #e4e6eb;
+    margin-top: 12px;
     padding-top: 8px;
-    border-top: 1px solid #ddd;
-    color: #65676b;
     font-size: 14px;
+    color: #65676b;
 }
 
-/* CONTACTS */
+/* RIGHT */
 .contact {
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 6px;
     border-radius: 6px;
-    cursor: pointer;
 }
 
 .contact img {
@@ -146,11 +138,4 @@ body {
 
 .contact:hover {
     background: #e4e6eb;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    .fb-search {
-        display: none;
-    }
 }
