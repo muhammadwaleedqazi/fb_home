@@ -18,23 +18,12 @@
 <!-- NAVBAR -->
 <nav class="navbar fb-navbar fixed-top">
     <div class="container-fluid">
-
         <div class="d-flex align-items-center">
             <span class="fb-logo">facebook</span>
-            <input type="text" class="fb-search ms-3" placeholder="Search Facebook">
+            <input type="text" class="fb-search ms-3 d-none d-md-block" placeholder="Search Facebook">
         </div>
 
-        <div class="fb-center-icons d-none d-md-flex">
-            <span class="icon active">🏠</span>
-            <span class="icon">🎥</span>
-            <span class="icon">🛒</span>
-            <span class="icon">👥</span>
-        </div>
-
-        <div class="fb-right-icons">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="nav-profile">
-        </div>
-
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="nav-profile">
     </div>
 </nav>
 
@@ -43,56 +32,31 @@
     <div class="row">
 
         <!-- LEFT SIDEBAR -->
-        <div class="col-md-3 d-none d-md-block left-sidebar">
-            <div class="sidebar-profile">
+        <aside class="col-lg-3 d-none d-lg-block sidebar">
+            <div class="profile-row">
                 <img src="https://randomuser.me/api/portraits/women/44.jpg">
                 <span>Josephine Williams</span>
             </div>
 
-            <div class="sidebar-item">Watch</div>
-            <div class="sidebar-item">Events</div>
             <div class="sidebar-item">Friends</div>
             <div class="sidebar-item">Memories</div>
-        </div>
+            <div class="sidebar-item">Saved</div>
+            <div class="sidebar-item">Groups</div>
+        </aside>
 
         <!-- FEED -->
-        <div class="col-md-6 feed">
-
-            <!-- STORIES -->
-            <div class="stories">
-                <div class="story-card">
-                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e">
-                    <span>Add Story</span>
-                </div>
-                <div class="story-card">
-                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
-                    <span>Betty</span>
-                </div>
-                <div class="story-card">
-                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d">
-                    <span>Dennis</span>
-                </div>
-                <div class="story-card">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2">
-                    <span>Cynthia</span>
-                </div>
-            </div>
+        <main class="col-lg-6 col-md-8 feed mx-auto">
 
             <!-- CREATE POST -->
-            <div class="post-card create-post">
-                <div class="create-post-top">
+            <div class="card post-card">
+                <div class="create-post">
                     <img src="https://randomuser.me/api/portraits/women/44.jpg">
                     <input type="text" placeholder="What's on your mind, Josephine?">
-                </div>
-                <div class="post-actions">
-                    <span>📷 Photo</span>
-                    <span>😊 Feeling</span>
-                    <span>📍 Location</span>
                 </div>
             </div>
 
             <!-- POST -->
-            <div class="post-card">
+            <div class="card post-card">
                 <div class="post-header">
                     <img src="https://randomuser.me/api/portraits/women/65.jpg">
                     <div>
@@ -100,27 +64,58 @@
                         <small>5h · Public</small>
                     </div>
                 </div>
-                <p>This has some great healthy recipes 🥗</p>
-                <img class="post-image" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+
+                <p class="post-text">
+                    This has some great healthy recipes 🥗
+                </p>
+
+                <img class="post-image"
+                     src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+
+                <div class="post-footer">
+                    <span>Like</span>
+                    <span>Comment</span>
+                    <span>Share</span>
+                </div>
             </div>
 
-        </div>
+            <!-- POST -->
+            <div class="card post-card">
+                <div class="post-header">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg">
+                    <div>
+                        <h6>Dennis Han</h6>
+                        <small>1d · Public</small>
+                    </div>
+                </div>
+
+                <p class="post-text">
+                    Consistency beats motivation 💪
+                </p>
+
+                <div class="post-footer">
+                    <span>Like</span>
+                    <span>Comment</span>
+                    <span>Share</span>
+                </div>
+            </div>
+
+        </main>
 
         <!-- RIGHT SIDEBAR -->
-        <div class="col-md-3 d-none d-md-block right-sidebar">
-            <h6>Sponsored</h6>
-            <img class="sponsored-img" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+        <aside class="col-lg-3 d-none d-lg-block sidebar">
+            <h6 class="mb-3">Contacts</h6>
 
-            <hr>
+            <div class="contact">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg">
+                Eric Jones
+            </div>
 
-            <h6>Contacts</h6>
             <div class="contact">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg"> Dennis
+                <img src="https://randomuser.me/api/portraits/women/22.jpg">
+                Sarah Lee
             </div>
-            <div class="contact">
-                <img src="https://randomuser.me/api/portraits/men/45.jpg"> Eric
-            </div>
-        </div>
+        </aside>
 
     </div>
 </div>
